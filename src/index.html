@@ -83,5 +83,15 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      setTimeout(() => {
+        document.querySelectorAll('.card').forEach(element => {
+          if (element.classList.contains('active') == false) {
+            element.style.display = 'none';
+          }
+        });
+      }, 3000)
+    </script>
   </body>
 </html>
